@@ -1,0 +1,146 @@
+body {
+	background-color: #FFF;
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #141414;
+	font-family: "Arial Black", Gadget, sans-serif;	
+	display: table;
+	height: 58px;
+	width: 100%;
+	top: -3px;
+	left: 0px;
+	position: fixed;
+	z-index: 3
+}
+
+.navbar a {
+	color: #FFF;
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 20px 16px;
+	text-decoration: none;
+	font-size: small;
+}
+
+.navbar a:not(.active) {
+	opacity: 0.6
+}
+
+.navbar a:not(.active):hover {
+	transition: 0.3s;
+	opacity: 1;
+}
+
+.navbar a.active {
+	background-color: #FFF;
+	color: #000
+}
+
+.navbar-menu-button {
+	height: 35px;
+	width: 35px;
+	filter: invert(100%) sepia(56%) saturate(2%) hue-rotate(241deg) brightness(107%) contrast(101%) opacity(60%);
+	float: right;
+	padding: 11px 7px;
+	display: none
+}
+
+.navbar-menu-button:hover {
+	transition: 0.3s;
+	filter: invert(100%) sepia(56%) saturate(2%) hue-rotate(241deg) brightness(107%) contrast(101%) opacity(100%);
+}
+
+.secondary-navbar {
+	width: 30%;
+	height: 100%;
+	transition: transform 0.1s linear;
+	display: table;
+	position: fixed;
+	transform: translate(-110%);
+	z-index: 2;
+	overflow: hidden;
+	font-family: "Arial Black", Gadget, sans-serif;	
+	background-color:#141414;
+}
+
+.secondary-navbar a {
+	color: #FFF;
+	display: list-item;
+	text-align: center;
+	padding: 32px 18px;
+	transform: translate(0px, 32px);
+	text-decoration: none;
+	font-size: medium;
+}
+
+.secondary-navbar a:not(.active) {
+	opacity: 0.6
+}
+
+.secondary-navbar a:not(.active):hover {
+	transition: 0.3s;
+	opacity: 1;
+}
+
+.secondary-navbar a.active {
+	background-color: #FFF;
+	color: #000
+}
+
+.main-content h2 {
+	font-family: 'Lato', sans-serif;
+
+}
+
+.title {
+	text-align: center;
+	font-size: xx-large;
+	font-family: 'Lato', sans-serif;
+}
+
+
+.main-content {
+	font-family: 'Rubik', sans-serif;
+	color: #000;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	line-height: 1.2
+}
+
+.me-img {
+	transition: 0.5s;
+	z-index: 1
+}
+
+.me-img:hover {
+	opacity: 0	
+}
+
+.imgcontainer {
+	position: relative;
+	text-align: center;
+}
+
+.imgcaption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	font-size: 24px;
+	font-family: "Rubik"
+}
+
+.painting1, .painting2, .painting3, .painting4, .painting5, .painting6 {
+	max-width: 40%;
+	height: auto;
+	z-index: 1;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 75%;
+	left: 50%
+}
