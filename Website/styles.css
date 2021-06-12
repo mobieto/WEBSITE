@@ -30,7 +30,7 @@ body {
 }
 
 .navbar a:not(.active):hover {
-	transition: 0.3s;
+	transition: opacity 0.3s linear;
 	opacity: 1;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .navbar-menu-button:hover {
-	transition: 0.3s;
+	transition: filter 0.3s linear;
 	filter: invert(100%) sepia(56%) saturate(2%) hue-rotate(241deg) brightness(107%) contrast(101%) opacity(100%);
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .secondary-navbar a:not(.active):hover {
-	transition: 0.3s;
+	transition: opacity 0.3s linear;
 	opacity: 1;
 }
 
@@ -112,7 +112,7 @@ body {
 }
 
 .me-img {
-	transition: 0.5s;
+	transition: opacity 0.5s linear;
 	z-index: 1
 }
 
