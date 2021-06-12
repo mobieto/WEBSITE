@@ -1,6 +1,6 @@
 var secNavBarActive = false;
 
-function mobileCheck() {
+var mobileCheck = () => {
 	if (navigator.userAgent.match(/Android/i)
 		|| navigator.userAgent.match(/webOS/i)
 		|| navigator.userAgent.match(/iPhone/i)
@@ -12,7 +12,7 @@ function mobileCheck() {
 	return true;
 };
 
-function updateNavbarOnResize() {
+var updateNavbarOnResize = () => {
 	/* Hide navbar buttons and show a menu button when screen width is too small */
 	var navbar = document.getElementById("navbar");
 	var navbarMenuButton = document.getElementById("navmenubutton");
