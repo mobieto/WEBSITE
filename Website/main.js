@@ -32,7 +32,7 @@ let updateNavbarOnResize = () => {
 		navbarMenuButton.style.display = "block";
 	} else {
 		for (let i = 0; i < navChildren.length; i++) {
-			var item = navChildren[i];
+			let item = navChildren[i];
 
 			if (item.tagName === "A") {
 				item.style.display = "block";
