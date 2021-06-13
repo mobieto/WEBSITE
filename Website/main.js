@@ -1,4 +1,4 @@
-var secNavBarActive = false;
+let secNavBarActive = false;
 
 var mobileCheck = () => {
 	if (navigator.userAgent.match(/Android/i)
@@ -10,19 +10,19 @@ var mobileCheck = () => {
 		|| navigator.userAgent.match(/Windows Phone/i)) 
 	
 	return true;
-};
+}
 
 var updateNavbarOnResize = () => {
 	/* Hide navbar buttons and show a menu button when screen width is too small */
-	var navbar = document.getElementById("navbar");
-	var navbarMenuButton = document.getElementById("navmenubutton");
-	var navChildren = navbar.children;
-	var screenWidth = window.innerWidth;
-	var secondaryNavbar = document.getElementById("secondarynavbar");
+	const navbar = document.getElementById("navbar");
+	const navbarMenuButton = document.getElementById("navmenubutton");
+	const navChildren = navbar.children;
+	const screenWidth = window.innerWidth;
+	const secondaryNavbar = document.getElementById("secondarynavbar");
 	
-	if (screenWidth <= 650 || mobileCheck()) {
-		for (var i = 0; i < navChildren.length; i++) {
-			var item = navChildren[i];
+	if (screenWidth <= 600 || mobileCheck()) {
+		for (let i = 0; i < navChildren.length; i++) {
+			let item = navChildren[i];
 
 			if (item.tagName === "A") {
 				item.style.display = "none";
@@ -31,7 +31,7 @@ var updateNavbarOnResize = () => {
 
 		navbarMenuButton.style.display = "block";
 	} else {
-		for (var i = 0; i < navChildren.length; i++) {
+		for (let i = 0; i < navChildren.length; i++) {
 			var item = navChildren[i];
 
 			if (item.tagName === "A") {
@@ -51,16 +51,16 @@ var updateNavbarOnResize = () => {
 window.onload = () => {
 	updateNavbarOnResize();
 
-	var navMenuButton = document.getElementById("navmenubutton");
-	var secondaryNavbar = document.getElementById("secondarynavbar");
-	var currentImage = 1;
+	const navMenuButton = document.getElementById("navmenubutton");
+	const secondaryNavbar = document.getElementById("secondarynavbar");
+	let currentImage = 1;
 
 	navMenuButton.onclick = () => {
 		if (secNavBarActive) {
 			secondaryNavbar.style.transform = "translate(-110%)";
 			secNavBarActive = false;
 		} else {
-			secondaryNavbar.style.transform = "translate(-5%)";
+			secondaryNavbar.style.transform = "translate(-6%)";
 			secNavBarActive = true;
 		}
 	}	
