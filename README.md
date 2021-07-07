@@ -1,2 +1,2 @@
-# school-website-project
+# WEBSITE
 website
