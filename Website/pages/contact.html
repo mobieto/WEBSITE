@@ -32,6 +32,37 @@
             <h1>&nbsp; </h1>
             <div class='title'>CONTACT</div>
             <h2>+</h2>
+            
+            <div class="form-container">
+                <form class="decor">
+                    <div class="circle"></div>
+                    <div class="form-inner">
+                        <input type="text" class="text" placeholder="Username" id="username-form">
+                        <input type="email" class="email" placeholder="Email" id="email-form">
+                        <textarea placeholder="Message..." rows="5" id="message-form"></textarea>
+                        <button type="submit" class="contact-button" id="contact-btn" onclick="
+let userform = document.getElementById('username-form');
+let emailform = document.getElementById('email-form');
+let msgform = document.getElementById('message-form');
+
+if (userform.value.length > 0 && emailform.value.length > 0 && msgform.value.length > 0) {
+	alert('Message sent!\n\nExpect a response within 2 - 3 business days.');
+	userform.value = '';
+	emailform.value = '';
+	msgform.value = '';
+} else {
+	alert('Do not leave any fields empty!');
+}">Submit</button>
+                    </div>
+                </form>
+            </div>
+            
+            <h3>
+            	Or you can reach me through email:
+            </h3>
+            <h2>
+            	johnwbooth@outlook.com
+            </h2>
         </div>
     </body>
 </html>
