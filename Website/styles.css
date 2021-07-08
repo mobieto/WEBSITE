@@ -1,5 +1,8 @@
 body {
 	background-color: #FFF;
+	min-height: 100vh;
+    	padding: 0;
+    	margin: 0;
 }
 
 .navbar {
@@ -95,12 +98,88 @@ body {
 
 }
 
+.main-content {
+	text-align: center;	
+}
+
 .title {
 	text-align: center;
 	font-size: xx-large;
 	font-family: 'Lato', sans-serif;
 }
 
+.text, .email, textarea { 
+	outline: none;
+}
+
+.form-container {
+	text-align: center	
+}
+
+.decor {
+	position: relative;
+	width: 80%;
+	border-radius: 30px;
+	background: #fff;
+	text-align: center;
+	margin: 0 auto;
+	max-width: 60%
+}
+
+.circle {
+	position: absolute;
+	bottom: 80px;
+	left: -55px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #fff;
+}
+
+.form-inner {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+.form-inner input,
+.form-inner textarea {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 10px;
+	border: none;
+	border-radius: 20px;
+	background: #d0dfe8;
+	font-family: 'Lato', sans-serif;
+}
+
+.form-inner textarea {
+	resize: none;
+}
+
+.contact-button {
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	border-radius: 20px;
+	border: none;
+	border-bottom: 4px solid #3e4f24;
+	background: #5a7233; 
+	font-size: 16px;
+	font-weight: 400;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+}
+
+.contact-button:hover {
+	background: #3e4f24;
+} 
+
+@media (min-width: 568px) {
+	form {
+		width: 60%;
+	}
+}
 
 .main-content {
 	font-family: 'Rubik', sans-serif;
@@ -135,12 +214,70 @@ body {
 	font-family: "Rubik"
 }
 
+.img-left-button {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	width: 50px;
+	height: 50px;
+	background-color: #FFF;
+	border: 0
+}
+
+.img-right-button {
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	width: 50px;
+	height: 50px;
+	background-color: #FFF;
+	border: 0
+}
+
+.img-left-button img {
+	height: inherit;
+	width: inherit;
+	transition: filter 0.25s linear;
+	top: 75%;
+	left: 75%;
+	transform: translate(-20%, -7%)
+}
+
+.img-right-button img {
+	height: inherit;
+	width: inherit;
+	transition: filter 0.25s linear;
+	top: 75%;
+	left: 75%;
+	transform: translate(-20%, -7%)
+}
+
+.img-left-button img:hover {
+	filter: invert(87%) sepia(7%) saturate(25%) hue-rotate(332deg) brightness(84%) contrast(83%);
+}
+
+.img-right-button img:hover {
+	filter: invert(87%) sepia(7%) saturate(25%) hue-rotate(332deg) brightness(84%) contrast(83%);
+}
+
+.gallery-txt-content {
+	top: 80%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	max-width: 60%;
+}
+
 .painting1, .painting2, .painting3, .painting4, .painting5, .painting6 {
-	max-width: 40%;
-	height: auto;
+	max-height: 50%;
+	width: auto;
 	z-index: 1;
 	position: absolute;
 	transform: translate(-50%, -50%);
-	top: 75%;
-	left: 50%
+	top: 53%;
+	left: 50%;
+	display: none;
 }
