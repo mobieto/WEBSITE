@@ -1,11 +1,11 @@
 let secNavBarActive = false;
 const imgDescs = [
-	'This is sample text sample text basically sample text oh yeah! sample text\nSample text deez sample ok ok ok5 yq5y q45y q54y q45y q54y q54y q54y q45y q54y q5y q5y',
-	'Another sample text ok ok ok ok ok ok nthoingrgrn frnf jfrjguj rgui rt gi qgwerg 5y254y 54tyq 54y q54y q5 yq45uy q45y q45y q45y q45y q54g q 54 q45yq45g q45y rthwr5hq5y',
-	'1 2 3 4 5 6 7 8 9 0 sample text test here 1 2 3 test test 1 2 3a erga ergary atjqaa dfgdvvb sdfv aerg aerh  atjhafgaer gafg aertghaerga ryh aetuyaerrg qrt256 2445624 5',
-	'njergjaergarjgaejrgua rhagu rhhgil aerurhhg aurrh h garhga jfng iauhv rjanglfhgal rugha fvha lruvha rjghral fhg laruhv arhg aufhv arjhgaui rrh avuur vlanrugha r vjnrl uiuig g ahruiggah rlv uaarh  gauihr viaurh h gauarhvauir hhgaurvh alriugha rvuiharil ilguahri ivuuahr gliauhri i vaurgi aurjnvi argguaj rivjar kgajkrhnvaeuirrhv aerugha fvnaui rgh afnba riugha fuiiga ',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis consequat lectus nec euismod. Nunc et facilisis magna. Nunc sit amet justo ut velit condimentum placerat in id mi. In congue gravida eros et sollicitudin. Sed quis interdum massa. Maecenas justo nibh, placerat a faucibus vitae, cursus a libero.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis consequat lectus nec euismod. Nunc et facilisis magna. Nunc sit amet justo ut velit condimentum placerat in id mi. In congue gravida eros et sollicitudin. Sed quis interdum massa. Maecenas justo nibh, placerat a faucibus vitae, cursus a libero.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis consequat lectus nec euismod. Nunc et facilisis magna. Nunc sit amet justo ut velit condimentum placerat in id mi. In congue gravida eros et sollicitudin. Sed quis interdum massa. Maecenas justo nibh, placerat a faucibus vitae, cursus a libero.',
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis consequat lectus nec euismod. Nunc et facilisis magna. Nunc sit amet justo ut velit condimentum placerat in id mi. In congue gravida eros et sollicitudin. Sed quis interdum massa. Maecenas justo nibh, placerat a faucibus vitae, cursus a libero.',
 	'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
-	'jgngbfhfhvfjvhnauutgafuvnuarngfna ufv auvha fg vhafg ahfgvh atfgfaj kkvbafgvbaf frthg auirhv aurth hgjbh agh adjkdjfh v auyhhv aufvhartfvbhha fubh afhbjkrhgqeklfuhhvbaujh brgaer gaerg adfga erh at afgarg adfgareg adfgatyah fagr aerg argadf gar afg rafgar arg fagr afga rgarga raeryha erha ergarg adfg'
+	'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis consequat lectus nec euismod. Nunc et facilisis magna. Nunc sit amet justo ut velit condimentum placerat in id mi. In congue gravida eros et sollicitudin. Sed quis interdum massa. Maecenas justo nibh, placerat a faucibus vitae, cursus a libero.'
 ]
 
 let mobileCheck = () => {
@@ -100,6 +100,4 @@ window.onload = () => {
 	updateGallery();
 }
 
-window.onresize = () => {
-	updateNavbarOnResize();
-}
+window.onresize = updateNavbarOnResize;
